@@ -18,11 +18,9 @@ public:
         int currNum = nums[0];
         int count = 1;
         for (int i = 1; i < nums.size(); ++i) {
-            if (nums[i] == currNum) {
-                continue;
-            } else {
+            if (nums[i] != currNum) {
                 currNum = nums[i];
-                swap(nums[i], nums[count]);
+                nums[count] = nums[i];
                 count++;
             }
         }
