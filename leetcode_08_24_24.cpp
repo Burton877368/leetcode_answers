@@ -6,7 +6,7 @@ palindrome
 , and false otherwise.
 */
 
-//Beats 47%
+//Beats 70%
 
 class Solution {
 public:
@@ -19,9 +19,6 @@ public:
         string reversed_word = word;
         reverse(word.begin(), word.end());
 
-        if (word == reversed_word) {
-            return true;
-        }
-        return false;
+        return (word == reversed_word);
     }
 };
